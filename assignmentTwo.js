@@ -74,4 +74,80 @@ for (let i = 0; i < names.length; i++) {
 
 console.log(nameLengths)
 
+//Q6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
+
+
+let sum = 0;
+
+for (let i = 0; i < nameLengths.length; i++) {
+    sum += nameLengths[i];
+}
+console.log(sum);
+
+//Q7. Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
+
+function wordN (word, n) {
+let wordN = '';
+
+while (n > 0) {
+  wordN += word;
+  n--;
+}
+return wordN;
+}
+
+console.log(wordN('hello',3));
+
+//Q8. Write a function that takes two parameters, firstName and lastName, and returns a full name (the full name should be the first and the last name separated by a space).
+ 
+function fullName (firstName, lastName) {
+  return firstName + ' ' +lastName;
+}
+
+console.log(fullName('sarah', 'schmid'));
+
+//Q9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
+
+let myArray = [3, 9, 23, 64, 2, 8, 28, 93];
+let add = 0;
+
+for (let i = 0; i < myArray.length; i++) {
+    add += myArray[i];
+    }
+    if (add >= 100) {
+      console.log(true); }
+
+//Q10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
+
+let addForAverage = 0;
+
+for (let i = 0; i < myArray.length; i++) {
+  addForAverage += myArray[i];
+    }
+   
+    console.log(addForAverage/myArray.length); 
+
+//Q11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+
+let comparisionArray1 = [4, 45, 7, 2];
+let addForAverageComparison1 = 0;
+let comparisionArray2 = [5, 45, 7, 2];
+let addForAverageComparison2 = 0;
+
+
+for (let i = 0; i < comparisionArray1.length; i++) {
+  addForAverageComparison1 += comparisionArray1[i];
+  }
+
+for (let i = 0; i < comparisionArray2.length; i++) {
+    addForAverageComparison1 += comparisionArray2[i];
+    }
+
+function arrayComparison (array1,array2) { if (array1> array2) {
+ return true; }}
+
+console.log(arrayComparison (addForAverageComparison1/comparisionArray1.length, addForAverageComparison2/comparisionArray2.length) )
+
+//Q12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+
 
