@@ -151,3 +151,4 @@ console.log(arrayComparison (addForAverageComparison1/comparisionArray1.length, 
 //Q12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 
 
+//comment test
