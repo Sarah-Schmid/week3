@@ -55,3 +55,4 @@ An examplew ould be summing all the values,or returning an average
 filter returns a new array that contains all of the elements where the invoked method returns true (uses a boolean filter on an array to create a new array)
 
 Splice can alter the contents of an array by adding, removing or modifying elements in an array at a specific location in an array (the first parameter is the location to start at, the second parameter is how many elements to removed) the Splice method returns an array of all the elements removed
+# week3
