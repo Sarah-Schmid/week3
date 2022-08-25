@@ -48,7 +48,7 @@ console.log(namesString.length/names.length)
 
 let namesStringWithSpaces = '';
 for(let i = 0; i < names.length; i++){
-  namesStringWithSpaces += names[i]
+  namesStringWithSpaces += `${names[i]} `
 } 
 
 console.log(namesStringWithSpaces);
