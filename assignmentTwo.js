@@ -109,23 +109,29 @@ console.log(fullName('sarah', 'schmid'));
 //Q9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 
 let myArray = [3, 9, 23, 64, 2, 8, 28, 93];
-let add = 0;
 
-for (let i = 0; i < myArray.length; i++) {
-    add += myArray[i];
-    }
+function returnTrueIfOver100(arraysum) {
+let add = 0;
+  for (let i = 0; i < arraysum.length; i++) {
+    add += arraysum[i]; }
     if (add >= 100) {
-      console.log(true); }
+     return true; }
+}
+
+      console.log(returnTrueIfOver100(myArray))
 
 //Q10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
 
-let addForAverage = 0;
-
-for (let i = 0; i < myArray.length; i++) {
-  addForAverage += myArray[i];
+function averageArrayValue(arr){
+  let addForAverage = 0;
+    for (let i = 0; i < arr.length; i++) {
+      addForAverage += arr[i];
     }
-   
-    console.log(addForAverage/myArray.length); 
+      return(addForAverage/arr.length); 
+}
+
+console.log(averageArrayValue(myArray))
+
 
 //Q11. Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
 
@@ -146,9 +152,20 @@ for (let i = 0; i < comparisionArray2.length; i++) {
 function arrayComparison (array1,array2) { if (array1> array2) {
  return true; }}
 
-console.log(arrayComparison (addForAverageComparison1/comparisionArray1.length, addForAverageComparison2/comparisionArray2.length) )
+console.log(arrayComparison (addForAverageComparison1/comparisionArray1.length, addForAverageComparison2/comparisionArray2.length) );
 
 //Q12. Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 
+function willBuyDrink(isHotOutside,moneyinPocket) {
+  if (isHotOutside==true && moneyinPocket >= 10.5) {return true;}
+}
+console.log(willBuyDrink(true,11));
 
-//comment test
+//Q13. Write a function that takes an array of numbers and returns the value of first element multiplitied by the last element.
+
+function firstTimesLast(arr) {
+  return arr[arr.length-1] * arr.shift()
+}
+
+console.log(firstTimesLast(myArray));
+
